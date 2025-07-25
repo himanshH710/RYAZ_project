@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark"  onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Web Developer</p>
+          <h2>
+            Hey, I'm <span>Himanshu</span> <br />
+            from Punjab
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/User.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About me</h2>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+              doloremque ipsa explicabo dolore. Ad explicabo similique sed
+              voluptatum nesciunt incidunt, voluptatem atque cum ipsum itaque
+              neque commodi beatae eaque hic quidem eos! Tempore impedit, amet
+              dolore fugiat assumenda placeat harum inventore in deleniti
+              reprehenderit labore similique culpa ex saepe, debitis minima,
+              beatae voluptatum laboriosam rerum repudiandae sunt accusamus.
+              Autem animi blanditiis consequatur totam suscipit quasi dicta
+              accusantium debitis dolores, ex ut vero possimus adipisci eaque
+              ratione voluptate illum eligendi beatae optio fugit iusto facere
+              in recusandae? Explicabo repudiandae impedit repellendus omnis
+              labore fugit, optio odio, possimus amet rem voluptatibus dolores.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills') ">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience') ">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education') ">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML,CSS,JS </span><br />Front-End Web dev</li>
+                <li><span>MY SQL</span><br />Storing data</li>
+                <li><span>C++</span><br />Concepts of OOPS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025-Current</span><br />Training at RYAZ.IO
+                  technologies
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br />Passed 10th from DPS</li>
+                <li><span>2022</span><br />Passed 12th from DPS</li>
+                <li>
+                  <span>2023-2027</span><br />Persuing B.tech in IT from GNDEC
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">My services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugit possimus ducimus quisquam atque sit earum minima dolorum!
+              Eligendi necessitatibus libero incidunt iusto explicabo repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>MY SQL</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugit possimus ducimus quisquam atque sit earum minima dolorum!
+              Eligendi necessitatibus libero incidunt iusto explicabo repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Web design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugit possimus ducimus quisquam atque sit earum minima dolorum!
+              Eligendi necessitatibus libero incidunt iusto explicabo repellat.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My work</h2>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/game.png" alt="" />
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>A web version of game Tic-Tac-Toe</p>
+              <a
+                href="https://himanshh710.github.io/Tic-Tac-Toe/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Calculator.png" alt="" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>A online web version of a calculator</p>
+              <a
+                href="https://himanshh710.github.io/Calculator/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/weather.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                A app that help people the climatic condition of any location
+              </p>
+              <a
+                href="https://himanshh710.github.io/weather-App/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/To-do-list.png" alt="" />
+            <div class="layer">
+              <h3>To-Do-List</h3>
+              <p>
+                A app that help people to note daily task and show progress when
+                completed
+              </p>
+              <a
+                href="https://himanshh710.github.io/To-do-list/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact  -->
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="conatct-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-envelope"></i>contact@abc.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>8923092029</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="conatct-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Emial"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright <i class="fa-solid fa-copyright"></i>. Made with
+          <i class="fa-solid fa-heart" style="color: red"></i>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
